@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llava-server"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "llava @ git+https://github.com/haotian-liu/LLaVA.git@e61aa3f88f58f8e871b9c2476d743724e271c776",
+    "tokenizers==0.13.3",
+    "bert-score==0.3.13",
+    "flask==2.3.2",
+    "gunicorn==20.1.0",
+    "numpy<2.0"
+]
