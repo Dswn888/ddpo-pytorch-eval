@@ -2,7 +2,7 @@
 
 This is a customized implementation derived from [ddpo-pytorch](https://github.com/kvablack/ddpo-pytorch) and [LLaVA-server](https://github.com/kvablack/LLaVA-server). It is designed to evaluate the effectiveness of the prompt-image alignment reward function in DDPO.
 
-![DDPO](teaser.jpg)
+<img src="teaser.jpg" width="49%">
 
 ## Installation
 Requires Python 3.10 or newer.
@@ -25,4 +25,4 @@ accelerate launch scripts/train.py --config config/dgx.py:prompt_image_alignment
 <img src="https://github.com/kvablack/ddpo-pytorch/assets/12429600/393a929e-36af-46f2-8022-33384bdae1c8" width="49%">
 
 ## Reward Curves in Our Evaluation Experiment
-<img src="https://github.com/Dswn888/ddpo-pytorch-eval/assets/reward_curve.png" width="49%">
+<img src="assets/reward curve.png" width="49%">
