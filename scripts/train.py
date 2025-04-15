@@ -89,6 +89,7 @@ def main(_):
     set_seed(config.seed, device_specific=True)
 
     # load scheduler, tokenizer and models.
+    # print('serr', config.pretrained.model)
     pipeline = StableDiffusionPipeline.from_pretrained(
         config.pretrained.model, revision=config.pretrained.revision
     )
@@ -175,6 +176,7 @@ def main(_):
         assert len(models) == 1
         if config.use_lora and isinstance(models[0], AttnProcsLayers):
             # pipeline.unet.load_attn_procs(input_dir)
+            # print('unet', config.pretrained.model)
             tmp_unet = UNet2DConditionModel.from_pretrained(
                 config.pretrained.model,
                 revision=config.pretrained.revision,
@@ -186,6 +188,7 @@ def main(_):
             )
             del tmp_unet
         elif not config.use_lora and isinstance(models[0], UNet2DConditionModel):
+            # print('', input_dir)
             load_model = UNet2DConditionModel.from_pretrained(
                 input_dir, subfolder="unet"
             )

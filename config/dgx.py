@@ -8,7 +8,7 @@ base = imp.load_source("base", os.path.join(os.path.dirname(__file__), "base.py"
 def compressibility():
     config = base.get_config()
 
-    config.pretrained.model = "CompVis/stable-diffusion-v1-4"
+    config.pretrained.model = "/home/akide/CompVis/stable-diffusion-v1-4"
 
     config.num_epochs = 100
     config.use_lora = True
