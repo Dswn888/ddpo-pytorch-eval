@@ -30,5 +30,5 @@ accelerate launch scripts/train.py --config config/dgx.py:prompt_image_alignment
 
 ## Prompt-image Alignment Reward Curves in Our Evaluation Experiment
 <p align="center">
-    <img src="assets/reward curve.png" width="75%">
+    <img src="assets/reward_curve.png" width="75%">
 </p>
