@@ -13,7 +13,7 @@ First, install the necessary dependencies by running:
 ```bash
 pip install -e .
 ```
-### Configure GPU Settings
+### Configure Settings
 Before launching, open `gunicorn.conf.py` and configure the number of GPUs and the path to llava's weights. 
 
 For convenience, we recommend downloading all files from the [`liuhaotian/llava-v1.5-13b`](https://huggingface.co/liuhaotian/llava-v1.5-13b/tree/main) repository on Hugging Face and saving them to the `../llava-weights` folder. This ensures that no further code modifications related to the llava weights path are required.
