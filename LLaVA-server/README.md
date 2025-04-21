@@ -10,7 +10,7 @@ microsoft/deberta-xlarge-mnli (used for BERT score): Available at https://huggin
 ## Usage
 Before launching, you must modify `gunicorn.conf.py` to set the number of GPUs and the path to llava's weights. 
 
-We recommend downloading all files from the `liuhaotian/llava-v1.5-13b` repository on the Hugging Face website and storing them in the 
+We recommend downloading all files from the [`liuhaotian/llava-v1.5-13b`](https://huggingface.co/liuhaotian/llava-v1.5-13b/tree/main) repository on the Hugging Face website and storing them in the 
 `../llava-weights` folder, so you won't need to make further changes to the code regarding the llava weights path.
 
 In our experiment, we used 2 GPUs for llava-server and 6 GPUs for ddpo-pytorch.
